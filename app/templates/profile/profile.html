@@ -4,14 +4,14 @@
 <div class="container" style = "padding-top:70px;">
 <div class="row">
 <!-- displaying  Username-->
-  <div class="col-md-4">
+  <div class="col-md-4" style = "background-image: url("paper.gif");">
     <h3> {{user.username| capitalize}} </h3>
 
     <!--Displaying user bio-->
     {% if user.bio %}
       <p> {{user.bio}}</p>
     {%else%}
-      <p> {{user.username| capitalize}}No bio</p>
+      <p> {{user.username| capitalize}}:No bio</p>
     {% endif %}
   </div>
 

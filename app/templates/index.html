@@ -2,23 +2,24 @@
 
 
 {% block content%}
-    
+
     <div style="background-image:url(https://bizztor.com/in/wp-content/uploads/sites/11/2018/04/Entrepreneur-Blogs.jpg);
     display:cover;font-size: 20px;text-align: center">
-    <!-- <img src="" width="800px"> -->
+  </div>
+    <img src="" width="800px"
     <h1>welcome to blog</h1>
-    
+
         {% for blog in blogs %}
                     <h4>Category: {{ blog.category }}</h4>
-                
+
                     <p> {{ blog.title }}</p>
                     <p>{{ blog.content }} </p>
                     <p>{{ blog.date_of_blog }}</p>
                     <a href="/blog/{{blog.id}}">COMMENT</a>
                 </
         {% endfor %}
-       
-    
+
+
 </div>
     <p class="btn-group-lg"><a href="/blog/new">ADD BLOG</a></p>
 {% endblock content%}

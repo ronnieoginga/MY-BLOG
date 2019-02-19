@@ -20,6 +20,7 @@
 
       {% if user.profile_pic_path %}
       <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="img-thumbnail">
+      <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="img-thumbnail" width="300" height="300" style = " border-radius: 50%;">
       {%else%}
       <p>No profile picture</p>
       {% endif %}
@@ -40,5 +41,3 @@
 </div>
 </div>
 {% endblock %}
-
-

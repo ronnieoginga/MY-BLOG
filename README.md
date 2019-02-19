@@ -37,6 +37,7 @@ there are no known bugs so far but if you have slow internet i think it will be 
 
 
 ## Support and contact detail
+
 email me at:
 
 oginga001ronney@gmail.com
